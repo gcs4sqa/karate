@@ -1,3 +1,2 @@
 # karate
-# karate
-# karate
+Karate training.
