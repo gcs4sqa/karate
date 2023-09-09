@@ -3,6 +3,7 @@ Feature: test for the home page
 Background: define url
     Given url "https://api.realworld.io/api"
 
+@debug
 Scenario: get all tags
     Given path 'tags'
     When method Get
@@ -11,6 +12,7 @@ Scenario: get all tags
     And match response.tags == '#array'
     And match each response.tags == '#string'
 
+@smoke
 Scenario: get 10 articals from the page
     Given params {limit: 10, offset: 0}
     Given path 'articles'
