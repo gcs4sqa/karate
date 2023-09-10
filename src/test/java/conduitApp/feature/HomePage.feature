@@ -1,7 +1,7 @@
 Feature: test for the home page
 
 Background: define url
-    Given url "https://api.realworld.io/api"
+    Given url apiUrl
 
 @debug
 Scenario: get all tags

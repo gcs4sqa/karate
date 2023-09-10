@@ -5,14 +5,16 @@ function fn() {
     env = 'dev';
   }
   var config = {
-    env: env,
-    myVarName: 'someValue'
+    apiUrl: 'https://api.realworld.io/api'
   }
   if (env == 'dev') {
-    // customize
-    // e.g. config.foo = 'bar';
-  } else if (env == 'e2e') {
+    config.userEmail = 'goldbuildkarate@karate.com'
+    config.userPassword = 'karate'
+  } else if (env == 'QA') {
     // customize
   }
+
+  var accessToken = karate.callSingle('classpath:helpers/CreateToken.feature', config).authToken
+  karate.configure('headers', {Authorization: 'Token ' + accessToken})
   return config;
 }

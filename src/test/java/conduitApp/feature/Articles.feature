@@ -2,15 +2,9 @@
 Feature: article
 
 Background: define url
-    Given url "https://api.realworld.io/api"
-    Given path 'users/login'
-    And request {"user": {"email": "goldbuildkarate@karate.com","password": "karate"}}
-    When method Post
-    Then status 200
-    * def token = response.user.token
-
+    Given url apiUrl
+   
 Scenario: Create a new article
-    Given header Authorization = 'Token '+ token
     Given path 'articles'
     And request {"article": {"taglist":[], "title": "world today", "description": "test test", "body": "body"}}
     When method Post
@@ -19,7 +13,6 @@ Scenario: Create a new article
     * def slug = response.article.slug
 
     
-    Given header Authorization = 'Token '+ token
     Given params {author: goldbuildkarate, limit: 10, offset: 0}
     Given path 'articles'
     When method Get
@@ -27,12 +20,10 @@ Scenario: Create a new article
     And match response.articles[0].title == 'world today' 
 
 
-    Given header Authorization = 'Token '+ token
     Given path 'articles',slug
     When method delete
     Then status 204
 
-    Given header Authorization = 'Token '+ token
     Given params {author: goldbuildkarate, limit: 10, offset: 0}
     Given path 'articles'
     When method Get
