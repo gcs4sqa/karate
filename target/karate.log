@@ -1,8 +1,8 @@
-07:46:46.174 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
-07:46:47.164 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-07:46:50.246 [main] INFO  com.intuit.karate - karate.env system property was: null 
-07:46:50.272 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
-07:46:51.188 [main] DEBUG com.intuit.karate - request:
+14:32:37.093 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+14:32:38.047 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:32:41.154 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:32:41.177 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+14:32:42.206 [main] DEBUG com.intuit.karate - request:
 1 > POST https://api.realworld.io/api/users/login
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 67
@@ -12,77 +12,111 @@
 1 > Accept-Encoding: gzip,deflate
 {"user":{"email":"goldbuildkarate@karate.com","password":"karate"}}
 
-07:46:52.262 [main] DEBUG com.intuit.karate - response time in milliseconds: 1059
+14:32:43.140 [main] DEBUG com.intuit.karate - response time in milliseconds: 922
 1 < 200
-1 < Date: Sun, 10 Sep 2023 06:46:52 GMT
+1 < Date: Mon, 11 Sep 2023 13:32:43 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
 1 < X-Powered-By: Express
 1 < Access-Control-Allow-Origin: *
-1 < Etag: W/"182-5aZrOIxpK9jreiv3/wTMuxpbNSA"
+1 < Etag: W/"182-lK5pemBh1X5drDTVL4Tl6dhnQqs"
 1 < Via: 1.1 vegur
 1 < CF-Cache-Status: DYNAMIC
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ZnLFkiaY2rw8XX4E%2BV2LgP47w4Oo4PKysIHeunejAGsKpFmD%2BjLWbPt2%2F4u63bi2vemjsbfMDGsaT1Y6uUi0Ao%2Fl3scZN2qQ%2Bmj2tx1gGo6aDTooQ2HsYcisggEcBtIncyyy"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=n%2BSHzq25DDR8tMvUbsCksskJ3q1PedBM%2Brj0U07Il2J1X53nC%2FSHjDW1FcqFb3FS0z8sczZ2v0YFdj8Jq6AFa%2FCAOIF3fkVxci10uS2J6bfgt22Kv0Fb%2BkJAi0NbBGwVoXbj"}],"group":"cf-nel","max_age":604800}
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < CF-RAY: 8045b7602ee4dd75-LHR
+1 < CF-RAY: 80504743cce18889-LHR
 1 < alt-svc: h3=":443"; ma=86400
-{"user":{"email":"goldbuildkarate@karate.com","username":"goldbuildkarate","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiZ29sZGJ1aWxka2FyYXRlQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6ImdvbGRidWlsZGthcmF0ZSJ9LCJpYXQiOjE2OTQzMjg0MTIsImV4cCI6MTY5OTUxMjQxMn0._MtnKYL4to-wg75i07OcbfvaEu0uecv9hDhbWwz5_4Q"}}
+{"user":{"email":"goldbuildkarate@karate.com","username":"goldbuildkarate","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiZ29sZGJ1aWxka2FyYXRlQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6ImdvbGRidWlsZGthcmF0ZSJ9LCJpYXQiOjE2OTQ0MzkxNjMsImV4cCI6MTY5OTYyMzE2M30.t82AFAvPlpV52DrHQAbRlteeGPPar39EEZJCUyYAIyU"}}
 
-07:46:52.293 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
-07:46:52.332 [main] DEBUG com.intuit.karate - request:
-1 > GET https://api.realworld.io/api/tags
-1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiZ29sZGJ1aWxka2FyYXRlQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6ImdvbGRidWlsZGthcmF0ZSJ9LCJpYXQiOjE2OTQzMjg0MTIsImV4cCI6MTY5OTUxMjQxMn0._MtnKYL4to-wg75i07OcbfvaEu0uecv9hDhbWwz5_4Q
+14:32:43.170 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+14:32:43.924 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiZ29sZGJ1aWxka2FyYXRlQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6ImdvbGRidWlsZGthcmF0ZSJ9LCJpYXQiOjE2OTQ0MzkxNjMsImV4cCI6MTY5OTYyMzE2M30.t82AFAvPlpV52DrHQAbRlteeGPPar39EEZJCUyYAIyU
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 88
 1 > Host: api.realworld.io
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
 1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"shayne64@test.com","password":"123karate","username":"deana.labadie"}}
 
-
-07:46:53.011 [main] DEBUG com.intuit.karate - response time in milliseconds: 676
-1 < 200
-1 < Date: Sun, 10 Sep 2023 06:46:53 GMT
+14:32:44.413 [main] DEBUG com.intuit.karate - response time in milliseconds: 488
+1 < 201
+1 < Date: Mon, 11 Sep 2023 13:32:45 GMT
 1 < Content-Type: application/json; charset=utf-8
-1 < Transfer-Encoding: chunked
+1 < Content-Length: 360
 1 < Connection: keep-alive
 1 < X-Powered-By: Express
 1 < Access-Control-Allow-Origin: *
-1 < Etag: W/"76-JNoQ7jScO0YBsIzJuQiyDpRcKAI"
+1 < Etag: W/"168-H19721FRZAFdFLSUsxjWg7Ty6Hs"
 1 < Via: 1.1 vegur
 1 < CF-Cache-Status: DYNAMIC
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=DbOWVLpwZGhlnQ0vDl1VpCfYE%2FWwuQYtJc0rWBcqXZ%2BqDChv%2By5C07eKX4XW43LQGGxGyNHplf4QzhIuQQzsrOfGNIkhP35W7L6ar3AZXHiGPaV%2BFeJ1psxUnQe765pfnxY7"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=F%2BHRWAlwtsjDuUXtYWt77EtTh0%2F4S4kfovuvnq6ZbEHHWJv4pyfhzWDJg5ZW%2FerEBMtYZQmtsC0o98Qr%2F27LKCE3w%2BKdBHXLuMb6RCLj%2F%2BtnuZOs7eFRPcSBaMZF8D2oZLPw"}],"group":"cf-nel","max_age":604800}
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < CF-RAY: 8045b7642886dce7-LHR
+1 < CF-RAY: 8050474bfd0d4968-LHR
 1 < alt-svc: h3=":443"; ma=86400
-{"tags":["welcome","implementations","introduction","codebaseShow","ipsum","qui","cupiditate","et","quia","deserunt"]}
+{"user":{"email":"shayne64@test.com","username":"deana.labadie","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoic2hheW5lNjRAdGVzdC5jb20iLCJ1c2VybmFtZSI6ImRlYW5hLmxhYmFkaWUifSwiaWF0IjoxNjk0NDM5MTY1LCJleHAiOjE2OTk2MjMxNjV9.FSMydL98H4XxpcjqC7HwLaoXIMf6PUzWg6HP5SBep6k"}}
 
-07:46:53.201 [main] INFO  com.intuit.karate - karate.env system property was: null 
-07:46:53.259 [main] DEBUG com.intuit.karate - request:
-1 > GET https://api.realworld.io/api/articles?offset=0&limit=10
-1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiZ29sZGJ1aWxka2FyYXRlQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6ImdvbGRidWlsZGthcmF0ZSJ9LCJpYXQiOjE2OTQzMjg0MTIsImV4cCI6MTY5OTUxMjQxMn0._MtnKYL4to-wg75i07OcbfvaEu0uecv9hDhbWwz5_4Q
+14:32:44.588 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:32:44.694 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiZ29sZGJ1aWxka2FyYXRlQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6ImdvbGRidWlsZGthcmF0ZSJ9LCJpYXQiOjE2OTQ0MzkxNjMsImV4cCI6MTY5OTYyMzE2M30.t82AFAvPlpV52DrHQAbRlteeGPPar39EEZJCUyYAIyU
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 86
 1 > Host: api.realworld.io
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
 1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"linh11@test.com","password":"karate123","username":"KarateUser123"}}
 
-
-07:46:54.460 [main] DEBUG com.intuit.karate - response time in milliseconds: 1196
-1 < 200
-1 < Date: Sun, 10 Sep 2023 06:46:54 GMT
+14:32:45.029 [main] DEBUG com.intuit.karate - response time in milliseconds: 330
+1 < 422
+1 < Date: Mon, 11 Sep 2023 13:32:45 GMT
 1 < Content-Type: application/json; charset=utf-8
-1 < Transfer-Encoding: chunked
+1 < Content-Length: 50
 1 < Connection: keep-alive
 1 < X-Powered-By: Express
 1 < Access-Control-Allow-Origin: *
-1 < Etag: W/"415b-Npe3dWY9Ri6DWIGqpLPGoAkqhls"
+1 < Etag: W/"32-JsHJTKwNHW5NSVjFTl5ds7a++54"
 1 < Via: 1.1 vegur
 1 < CF-Cache-Status: DYNAMIC
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=mZr9alqCS3YV93YO1kkIehbNBqbjsIcskZDEHyqBKtY7Y7np6bMeDq%2FlkTcong2iAjGYaups9JlhpfKxc2Hcpbs5XhfG4T35WBPrmUIYnoVX8kG6yIJad6B%2FBENHT%2BhsnrfT"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Z1RExPY311YTvtlA0xJCOiL8nUrAy818nxsQ0EqmtQz19qb7DdQLz9rgVEFll4lmle8UrwHCHlrynq3UKGxL6x1SLz5eB65XiIng9n5YEe7w7ZKIW6l6Ivlu22CX6Jshq2wU"}],"group":"cf-nel","max_age":604800}
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < CF-RAY: 8045b769f9188867-LHR
+1 < CF-RAY: 80504750584824dd-LHR
 1 < alt-svc: h3=":443"; ma=86400
-{"articles":[{"slug":"Bla-Bla-Bla-228757","title":"Bla Bla Bla","description":"test test","body":"body","tagList":[],"createdAt":"2023-09-09T03:45:18.791Z","updatedAt":"2023-09-09T03:45:18.791Z","favorited":false,"favoritesCount":0,"author":{"username":"goldbuildkarate","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"new-article-228757","title":"new article","description":"new stuff","body":"this is a test","tagList":[],"createdAt":"2023-09-08T21:01:31.585Z","updatedAt":"2023-09-08T21:01:31.585Z","favorited":false,"favoritesCount":0,"author":{"username":"goldbuildkarate","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"this-is-a-test-228757","title":"this is a test","description":"test","body":"article about test","tagList":[],"createdAt":"2023-09-08T20:56:54.072Z","updatedAt":"2023-09-08T20:56:54.072Z","favorited":false,"favoritesCount":0,"author":{"username":"goldbuildkarate","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"If-we-quantify-the-alarm-we-can-get-to-the-FTP-pixel-through-the-online-SSL-interface!-120863","title":"If we quantify the alarm, we can get to the FTP pixel through the online SSL interface!","description":"Omnis perspiciatis qui quia commodi sequi modi. Nostrum quam aut cupiditate est facere omnis possimus. Tenetur similique nemo illo soluta molestias facere quo. Ipsam totam facilis delectus nihil quidem soluta vel est omnis.","body":"Quia quo iste et aperiam voluptas consectetur a omnis et.\\nDolores et earum consequuntur sunt et.\\nEa nulla ab voluptatem dicta vel. Temporibus aut adipisci magnam aliquam eveniet nihil laudantium reprehenderit sit.\\nAspernatur cumque labore voluptates mollitia deleniti et. Quos pariatur tenetur.\\nQuasi omnis eveniet eos maiores esse magni possimus blanditiis.\\nQui incidunt sit quos consequatur aut qui et aperiam delectus.\\nPraesentium quas culpa.\\nEaque occaecati cumque incidunt et. Provident saepe omnis non molestiae natus et.\\nAccusamus laudantium hic unde voluptate et sunt voluptatem.\\nMollitia velit id eius mollitia occaecati repudiandae. Voluptatum tempora voluptas est odio iure odio dolorem.\\nVoluptatum est deleniti explicabo explicabo harum provident quis molestiae. Sed dolores nostrum quis. Aut ipsa et qui vel similique sed hic a.\\nVoluptates dolorem culpa nihil aut ipsam voluptatem. Cupiditate officia voluptatum.\\nTenetur facere eum distinctio animi qui laboriosam.\\nQuod sed voluptatem et cumque est eos.\\nSint id provident suscipit harum odio et. Facere beatae delectus ut.\\nPossimus voluptas perspiciatis voluptatem nihil sint praesentium.\\nSint est nihil voluptates nesciunt voluptatibus temporibus blanditiis.\\nOfficiis voluptatem earum sed. Deserunt ab porro similique est accusamus id enim aut suscipit.\\nSoluta reprehenderit error nesciunt odit veniam sed.\\nDolore optio qui aut ab.\\nAut minima provident eius repudiandae a quibusdam in nisi quam.","tagList":["rerum","maiores","omnis","quae"],"createdAt":"2022-12-09T13:46:24.264Z","updatedAt":"2022-12-09T13:46:24.264Z","favorited":false,"favoritesCount":1837,"author":{"username":"Anah Benešová","bio":null,"image":"https://api.realworld.io/images/demo-avatar.png","following":false}},{"slug":"Try-to-transmit-the-HTTP-card-maybe-it-will-override-the-multi-byte-hard-drive!-120863","title":"Try to transmit the HTTP card, maybe it will override the multi-byte hard drive!","description":"Assumenda molestiae laboriosam enim ipsum quaerat enim officia vel quo. Earum odit rem natus totam atque cumque. Sint dolorem facere non.","body":"Sunt excepturi ut dolore fuga.\\nAutem eum maiores aut nihil magnam corporis consectetur sit. Voluptate et quasi optio eos et eveniet culpa et nobis.\\nSint aut sint sequi possimus reiciendis nisi.\\nRerum et omnis et sit doloribus corporis voluptas error.\\nIusto molestiae tenetur necessitatibus dolorem omnis. Libero sed ut architecto.\\nEx itaque et modi aut voluptatem alias quae.\\nModi dolor cupiditate sit.\\nDelectus consectetur nobis aliquid deserunt sint ut et voluptas.\\nCorrupti in labore laborum quod. Ipsa laudantium deserunt. Ut atque harum inventore natus facere sed molestiae.\\nQuia aliquid ut.\\nAnimi sunt rem et sit ullam dolorem ab consequatur modi. Cupiditate officia voluptatum.\\nTenetur facere eum distinctio animi qui laboriosam.\\nQuod sed voluptatem et cumque est eos.\\nSint id provident suscipit harum odio et. Et fuga repellendus magnam dignissimos eius aspernatur rerum. Quo perferendis nesciunt.\\nDolore dolorem porro omnis voluptatibus consequuntur et expedita suscipit et.\\nTempora facere ipsa.\\nDolore accusamus soluta officiis eligendi.\\nEum quaerat neque eum beatae odio. Ad voluptate vel.\\nAut aut dolor. Cupiditate officia voluptatum.\\nTenetur facere eum distinctio animi qui laboriosam.\\nQuod sed voluptatem et cumque est eos.\\nSint id provident suscipit harum odio et.","tagList":["voluptate","rerum","ducimus","hic"],"createdAt":"2022-12-09T13:46:24.264Z","updatedAt":"2022-12-09T13:46:24.264Z","favorited":false,"favoritesCount":1786,"author":{"username":"Anah Benešová","bio":null,"image":"https://api.realworld.io/images/demo-avatar.png","following":false}},{"slug":"We-need-to-calculate-the-bluetooth-JBOD-bus!-120863","title":"We need to calculate the bluetooth JBOD bus!","description":"Ipsa nemo eos sequi nulla id accusamus nam ratione dolore. Omnis sint quisquam accusamus rem rem nihil. Non minus animi cum dolorem earum odit sequi. Rem non inventore sed dicta atque modi. Sed dolorem iste molestiae. Sed eum iste aliquid aliquid.","body":"Nisi vitae nostrum perspiciatis impedit laborum repellat ullam et ut. Qui soluta veritatis autem repellat et inventore occaecati. Reprehenderit quae quas quos sapiente ullam ut.\\nVoluptates non ut. Iusto laborum aperiam neque delectus consequuntur provident est maiores explicabo. Quia harum nulla et quos sint voluptates exercitationem corrupti. Quis nesciunt ut est eos.\\nQui reiciendis doloribus.\\nEst quidem ullam reprehenderit.\\nEst omnis eligendi quis quis quo eum officiis asperiores quis. Ipsa cumque ad repellat qui libero quia impedit fugiat.\\nExcepturi ut vitae recusandae eos quisquam et voluptatem.\\nNeque nostrum distinctio provident eius tempore odio aliquid.\\nSaepe ut suscipit architecto. Eveniet sit ipsa officiis laborum.\\nIn vel est omnis sed impedit quod magni.\\nDignissimos quis illum qui atque aut ut quasi sequi. Ab quis aut earum.\\nVoluptatem sint accusantium sed cupiditate optio.\\nConsequatur in dolores aut enim.\\nNon sunt atque maxime dolores.\\nNam impedit sit. Nemo tempore dolor maiores blanditiis quia qui qui voluptatem non.\\nNisi dolores animi laboriosam aliquam qui adipisci voluptates atque dignissimos.\\nLibero sit quibusdam corporis aut inventore natus libero.\\nPraesentium omnis dolorum temporibus repellendus qui.\\nNon nostrum doloribus occaecati dolores sit ut.","tagList":["nostrum","quia","quaerat","numquam"],"createdAt":"2022-12-09T13:46:24.263Z","updatedAt":"2022-12-09T13:46:24.263Z","favorited":false,"favoritesCount":258,"author":{"username":"Anah Benešová","bio":null,"image":"https://api.realworld.io/images/demo-avatar.png","following":false}},{"slug":"Try-to-bypass-the-SAS-card-maybe-it-will-transmit-the-solid-state-system!-120863","title":"Try to bypass the SAS card, maybe it will transmit the solid state system!","description":"Est iste totam accusamus dolorem est. Quis non sit impedit similique incidunt odio aspernatur aut rem. Architecto est eum.","body":"Ipsa cumque ad repellat qui libero quia impedit fugiat.\\nExcepturi ut vitae recusandae eos quisquam et voluptatem.\\nNeque nostrum distinctio provident eius tempore odio aliquid.\\nSaepe ut suscipit architecto. Sapiente vitae culpa ut voluptatem incidunt excepturi voluptates exercitationem.\\nSed doloribus alias consectetur omnis occaecati ad placeat labore.\\nVoluptate consequatur expedita nemo recusandae sint assumenda.\\nQui vel totam quia fugit saepe suscipit autem quasi qui.\\nEt eum vel ut delectus ut nesciunt animi. Mollitia nostrum exercitationem sunt rem.\\nRem et voluptas consequatur mollitia nostrum.\\nSunt nesciunt et pariatur quam provident impedit. Officia consectetur quibusdam velit debitis porro quia cumque.\\nSuscipit esse voluptatem cum sit totam consequatur molestiae est.\\nMollitia pariatur distinctio fugit. Qui et dolorum.\\nEveniet architecto qui accusamus et modi harum facilis a eum.\\nEt vel cumque voluptatem earum minima perferendis. Illum voluptates ut vel et.\\nUt debitis excepturi suscipit perferendis officia numquam possimus.\\nFacere sit doloremque repudiandae corrupti veniam qui. Ipsa laudantium deserunt. Totam ab necessitatibus quidem non. Mollitia nostrum exercitationem sunt rem.\\nRem et voluptas consequatur mollitia nostrum.\\nSunt nesciunt et pariatur quam provident impedit. Molestias non debitis quibusdam quis quod.\\nSaepe ab et hic unde et sed.\\nMagni voluptatem est.\\nEt similique quo porro et.","tagList":["dolores","aut","consectetur","ullam"],"createdAt":"2022-12-09T13:46:24.263Z","updatedAt":"2022-12-09T13:46:24.263Z","favorited":false,"favoritesCount":307,"author":{"username":"Anah Benešová","bio":null,"image":"https://api.realworld.io/images/demo-avatar.png","following":false}},{"slug":"quantifying-the-microchip-wont-do-anything-we-need-to-index-the-online-SQL-hard-drive!-120863","title":"quantifying the microchip wont do anything, we need to index the online SQL hard drive!","description":"Minima soluta sed sed et optio explicabo at distinctio repudiandae. Magnam deleniti a ea. Non velit accusamus veniam qui. Necessitatibus velit ad aut officiis in officiis quasi. Sunt nulla dolores voluptatem esse magnam ut.","body":"Ab rerum eos ipsa accusantium nihil voluptatem.\\nEum minus alias.\\nIure commodi at harum.\\nNostrum non occaecati omnis quisquam. Id est non ad temporibus nobis.\\nQuod soluta quae voluptatem quisquam est. Quos pariatur tenetur.\\nQuasi omnis eveniet eos maiores esse magni possimus blanditiis.\\nQui incidunt sit quos consequatur aut qui et aperiam delectus.\\nPraesentium quas culpa.\\nEaque occaecati cumque incidunt et. Sunt excepturi ut dolore fuga.\\nAutem eum maiores aut nihil magnam corporis consectetur sit. Ipsa cumque ad repellat qui libero quia impedit fugiat.\\nExcepturi ut vitae recusandae eos quisquam et voluptatem.\\nNeque nostrum distinctio provident eius tempore odio aliquid.\\nSaepe ut suscipit architecto. Cum vitae aliquam neque consequatur quia id dicta ipsam.\\nExercitationem ab eum exercitationem non alias numquam qui.\\nItaque rerum ut nobis est nam vitae exercitationem minima fugiat.\\nEst sit non tempora soluta consequatur eveniet.\\nCorporis nisi dolorem architecto voluptatem. Quos pariatur tenetur.\\nQuasi omnis eveniet eos maiores esse magni possimus blanditiis.\\nQui incidunt sit quos consequatur aut qui et aperiam delectus.\\nPraesentium quas culpa.\\nEaque occaecati cumque incidunt et. Illum voluptates ut vel et.\\nUt debitis excepturi suscipit perferendis officia numquam possimus.\\nFacere sit doloremque repudiandae corrupti veniam qui. Ab quis aut earum.\\nVoluptatem sint accusantium sed cupiditate optio.\\nConsequatur in dolores aut enim.\\nNon sunt atque maxime dolores.\\nNam impedit sit. Est est sed itaque necessitatibus vitae officiis.\\nIusto dolores sint eveniet quasi dolore quo laborum esse laboriosam.\\nModi similique aut voluptates animi aut dicta dolorum.\\nSint explicabo autem quidem et.\\nNeque aspernatur assumenda fugit provident.","tagList":["possimus","voluptatem","cupiditate"],"createdAt":"2022-12-09T13:46:24.263Z","updatedAt":"2022-12-09T13:46:24.263Z","favorited":false,"favoritesCount":495,"author":{"username":"Anah Benešová","bio":null,"image":"https://api.realworld.io/images/demo-avatar.png","following":false}},{"slug":"Try-to-generate-the-TCP-bus-maybe-it-will-override-the-neural-bandwidth!-120863","title":"Try to generate the TCP bus, maybe it will override the neural bandwidth!","description":"Pariatur ut dolor repellendus dolores ut debitis. Est iusto neque dicta voluptatibus quia nulla consequatur. Omnis aut sed dolores qui laborum a amet.","body":"Quo perferendis nesciunt.\\nDolore dolorem porro omnis voluptatibus consequuntur et expedita suscipit et.\\nTempora facere ipsa.\\nDolore accusamus soluta officiis eligendi.\\nEum quaerat neque eum beatae odio. Qui soluta veritatis autem repellat et inventore occaecati. Doloribus consequatur et labore suscipit deserunt tempore ad quasi sed.\\nQuam cupiditate modi dolor et eos et culpa qui.\\nDelectus molestias ea id.\\nIllum ea unde sapiente non non non.\\nDolorem ut sed magni. Provident saepe omnis non molestiae natus et.\\nAccusamus laudantium hic unde voluptate et sunt voluptatem.\\nMollitia velit id eius mollitia occaecati repudiandae. Incidunt doloremque enim autem quam et magnam et expedita fuga.\\nPlaceat quia dolor ut.\\nNon dolor amet temporibus quas non hic sed.\\nQui tempore enim mollitia omnis sed ut eos rerum et.\\nQuidem voluptas est vel. Placeat sequi quaerat sapiente aspernatur autem sunt molestiae voluptatem.\\nAccusamus unde libero accusamus omnis totam et temporibus. Cupiditate officia voluptatum.\\nTenetur facere eum distinctio animi qui laboriosam.\\nQuod sed voluptatem et cumque est eos.\\nSint id provident suscipit harum odio et. Iusto laborum aperiam neque delectus consequuntur provident est maiores explicabo. Laborum est maxime enim accusantium magnam.\\nRerum dolorum minus laudantium delectus eligendi necessitatibus quia.\\nDeleniti consequatur explicabo aut nobis est vero tempore.\\nExcepturi earum quo quod voluptatem quo iure vel sapiente occaecati.\\nConsectetur consequatur corporis doloribus omnis harum voluptas esse amet. Mollitia nostrum exercitationem sunt rem.\\nRem et voluptas consequatur mollitia nostrum.\\nSunt nesciunt et pariatur quam provident impedit.","tagList":["dicta","rerum","omnis","blanditiis"],"createdAt":"2022-12-09T13:46:24.263Z","updatedAt":"2022-12-09T13:46:24.263Z","favorited":false,"favoritesCount":316,"author":{"username":"Anah Benešová","bio":null,"image":"https://api.realworld.io/images/demo-avatar.png","following":false}},{"slug":"You-cant-transmit-the-firewall-without-copying-the-1080p-SDD-interface!-120863","title":"You cant transmit the firewall without copying the 1080p SDD interface!","description":"Est sed deserunt eligendi in velit saepe. Dolorem quis illo vero qui ut recusandae occaecati dolores quae. Voluptatem vero aliquam alias adipisci reiciendis odit nobis est. Vel laboriosam quia commodi rerum. Voluptatum et sed et nesciunt iure ipsum iste aut enim.","body":"Incidunt doloremque enim autem quam et magnam et expedita fuga.\\nPlaceat quia dolor ut.\\nNon dolor amet temporibus quas non hic sed.\\nQui tempore enim mollitia omnis sed ut eos rerum et.\\nQuidem voluptas est vel. Temporibus quod quidem placeat porro.\\nUnde ipsam vel explicabo. Qui et dolorum.\\nEveniet architecto qui accusamus et modi harum facilis a eum.\\nEt vel cumque voluptatem earum minima perferendis. Ducimus dolores recusandae.\\nEa aut aperiam et aut eos inventore.\\nQuia cum ducimus autem iste.\\nQuos consequuntur est delectus temporibus autem. Quas ea voluptatem iste iure.\\nEt soluta et doloremque vero quis occaecati et fuga.\\nIncidunt recusandae dignissimos iusto quisquam sed unde at ea incidunt.\\nId voluptate incidunt qui totam autem voluptas maxime atque quaerat.\\nCorporis iste ut molestiae. Laborum itaque quos provident.\\nRerum cupiditate praesentium amet voluptatem dolor impedit modi dicta.\\nVoluptates assumenda optio est.\\nNon aperiam nam consequuntur vel a commodi dicta incidunt. Autem reiciendis provident iure possimus.\\nOccaecati soluta quibusdam libero tenetur minus vel sit illo.\\nCulpa optio dolorem eos similique voluptatem voluptatibus error accusantium. Officia consectetur quibusdam velit debitis porro quia cumque.\\nSuscipit esse voluptatem cum sit totam consequatur molestiae est.\\nMollitia pariatur distinctio fugit. Quis nesciunt ut est eos.\\nQui reiciendis doloribus.\\nEst quidem ullam reprehenderit.\\nEst omnis eligendi quis quis quo eum officiis asperiores quis. Et sed dicta eveniet accusamus consequatur.\\nUllam voluptas consequatur aut eos ducimus.\\nId officia est ut dicta provident beatae ipsa.","tagList":["possimus","maiores","facilis"],"createdAt":"2022-12-09T13:46:24.263Z","updatedAt":"2022-12-09T13:46:24.263Z","favorited":false,"favoritesCount":219,"author":{"username":"Anah Benešová","bio":null,"image":"https://api.realworld.io/images/demo-avatar.png","following":false}}],"articlesCount":200}
+{"errors":{"username":["has already been taken"]}}
+
+14:32:45.086 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:32:45.233 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiZ29sZGJ1aWxka2FyYXRlQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6ImdvbGRidWlsZGthcmF0ZSJ9LCJpYXQiOjE2OTQ0MzkxNjMsImV4cCI6MTY5OTYyMzE2M30.t82AFAvPlpV52DrHQAbRlteeGPPar39EEZJCUyYAIyU
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 98
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"goldbuildkarate@karate.com","password":"karate123","username":"cassy.schaefer"}}
+
+14:32:45.955 [main] DEBUG com.intuit.karate - response time in milliseconds: 719
+1 < 422
+1 < Date: Mon, 11 Sep 2023 13:32:46 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2f-BJEnYqgmLwV4NGkXB9OccFtans4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=oSU%2FltmVcLl4Jj16ma64fgFDSYhrMb4GRvE0bXBi6X%2B%2Fvp1ypwZuIl2ZfvxSb1fXF3Ds%2BTQEoSg4eGSooOAjvKQ17RyQuOzE6g8ZJI5M0B7zhxenH4KNnX9OOFpx77otTCB%2F"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 80504753cdea88a3-LHR
+1 < alt-svc: h3=":443"; ma=86400
+{"errors":{"email":["has already been taken"]}}
 
