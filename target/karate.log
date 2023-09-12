@@ -1,8 +1,8 @@
-14:32:37.093 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
-14:32:38.047 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-14:32:41.154 [main] INFO  com.intuit.karate - karate.env system property was: null 
-14:32:41.177 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
-14:32:42.206 [main] DEBUG com.intuit.karate - request:
+04:18:42.521 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @articles
+04:18:43.423 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+04:18:46.674 [main] INFO  com.intuit.karate - karate.env system property was: null 
+04:18:46.697 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+04:18:47.567 [main] DEBUG com.intuit.karate - request:
 1 > POST https://api.realworld.io/api/users/login
 1 > Content-Type: application/json; charset=UTF-8
 1 > Content-Length: 67
@@ -12,111 +12,131 @@
 1 > Accept-Encoding: gzip,deflate
 {"user":{"email":"goldbuildkarate@karate.com","password":"karate"}}
 
-14:32:43.140 [main] DEBUG com.intuit.karate - response time in milliseconds: 922
+04:18:48.561 [main] DEBUG com.intuit.karate - response time in milliseconds: 981
 1 < 200
-1 < Date: Mon, 11 Sep 2023 13:32:43 GMT
+1 < Date: Tue, 12 Sep 2023 03:18:48 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
 1 < X-Powered-By: Express
 1 < Access-Control-Allow-Origin: *
-1 < Etag: W/"182-lK5pemBh1X5drDTVL4Tl6dhnQqs"
+1 < Etag: W/"182-Vb/vm2hV0fxfYNaxDKfmw5msRhQ"
 1 < Via: 1.1 vegur
 1 < CF-Cache-Status: DYNAMIC
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=n%2BSHzq25DDR8tMvUbsCksskJ3q1PedBM%2Brj0U07Il2J1X53nC%2FSHjDW1FcqFb3FS0z8sczZ2v0YFdj8Jq6AFa%2FCAOIF3fkVxci10uS2J6bfgt22Kv0Fb%2BkJAi0NbBGwVoXbj"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Fyv3OxT8brWmsEe4TZi9dyGdk6z9%2BINgKb8foyvmR6QCh17IahUPGFfpfYNq3fcoY4HCbxxQtPJKMqazarR0HusTYU6VXoSttEYpqo1KPXxWABVPKaq9X8aWva4W14llF%2FqZ"}],"group":"cf-nel","max_age":604800}
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < CF-RAY: 80504743cce18889-LHR
+1 < CF-RAY: 805501578df77190-LHR
 1 < alt-svc: h3=":443"; ma=86400
-{"user":{"email":"goldbuildkarate@karate.com","username":"goldbuildkarate","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiZ29sZGJ1aWxka2FyYXRlQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6ImdvbGRidWlsZGthcmF0ZSJ9LCJpYXQiOjE2OTQ0MzkxNjMsImV4cCI6MTY5OTYyMzE2M30.t82AFAvPlpV52DrHQAbRlteeGPPar39EEZJCUyYAIyU"}}
+{"user":{"email":"goldbuildkarate@karate.com","username":"goldbuildkarate","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiZ29sZGJ1aWxka2FyYXRlQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6ImdvbGRidWlsZGthcmF0ZSJ9LCJpYXQiOjE2OTQ0ODg3MjgsImV4cCI6MTY5OTY3MjcyOH0.psDgeaOw7RCWGnHMFsjeGu3TQGIj5LuZ51DRGcy0avU"}}
 
-14:32:43.170 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
-14:32:43.924 [main] DEBUG com.intuit.karate - request:
-1 > POST https://api.realworld.io/api/users
-1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiZ29sZGJ1aWxka2FyYXRlQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6ImdvbGRidWlsZGthcmF0ZSJ9LCJpYXQiOjE2OTQ0MzkxNjMsImV4cCI6MTY5OTYyMzE2M30.t82AFAvPlpV52DrHQAbRlteeGPPar39EEZJCUyYAIyU
+04:18:48.601 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+04:18:49.148 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/articles
+1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiZ29sZGJ1aWxka2FyYXRlQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6ImdvbGRidWlsZGthcmF0ZSJ9LCJpYXQiOjE2OTQ0ODg3MjgsImV4cCI6MTY5OTY3MjcyOH0.psDgeaOw7RCWGnHMFsjeGu3TQGIj5LuZ51DRGcy0avU
 1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 88
+1 > Content-Length: 102
 1 > Host: api.realworld.io
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
 1 > Accept-Encoding: gzip,deflate
-{"user":{"email":"shayne64@test.com","password":"123karate","username":"deana.labadie"}}
+{"article":{"taglist":[],"title":"Jeyne Westerling","description":"Tolos","body":"Winter is coming."}}
 
-14:32:44.413 [main] DEBUG com.intuit.karate - response time in milliseconds: 488
+04:18:49.640 [main] DEBUG com.intuit.karate - response time in milliseconds: 488
 1 < 201
-1 < Date: Mon, 11 Sep 2023 13:32:45 GMT
+1 < Date: Tue, 12 Sep 2023 03:18:49 GMT
 1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 360
+1 < Content-Length: 379
 1 < Connection: keep-alive
 1 < X-Powered-By: Express
 1 < Access-Control-Allow-Origin: *
-1 < Etag: W/"168-H19721FRZAFdFLSUsxjWg7Ty6Hs"
+1 < Etag: W/"17b-uauNqwm4tFQG7ufFqIuu0oODu+o"
 1 < Via: 1.1 vegur
 1 < CF-Cache-Status: DYNAMIC
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=F%2BHRWAlwtsjDuUXtYWt77EtTh0%2F4S4kfovuvnq6ZbEHHWJv4pyfhzWDJg5ZW%2FerEBMtYZQmtsC0o98Qr%2F27LKCE3w%2BKdBHXLuMb6RCLj%2F%2BtnuZOs7eFRPcSBaMZF8D2oZLPw"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=fF0mk4%2B%2BQ5oZ4L67RSM93Qzy64p%2BvuQ%2FZvYCg6u50Pw2SnCO8jcKQ0Dknt3MNC0gYu9bBsk5%2F%2FgXsirOlHi82oVbhNtfTQv12F8gcwm2RwMBQe76hrX2Dq8ofGi4pjo2Qw1L"}],"group":"cf-nel","max_age":604800}
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < CF-RAY: 8050474bfd0d4968-LHR
+1 < CF-RAY: 8055015e9ca124e1-LHR
 1 < alt-svc: h3=":443"; ma=86400
-{"user":{"email":"shayne64@test.com","username":"deana.labadie","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoic2hheW5lNjRAdGVzdC5jb20iLCJ1c2VybmFtZSI6ImRlYW5hLmxhYmFkaWUifSwiaWF0IjoxNjk0NDM5MTY1LCJleHAiOjE2OTk2MjMxNjV9.FSMydL98H4XxpcjqC7HwLaoXIMf6PUzWg6HP5SBep6k"}}
+{"article":{"slug":"Jeyne-Westerling-228757","title":"Jeyne Westerling","description":"Tolos","body":"Winter is coming.","tagList":[],"createdAt":"2023-09-12T03:18:49.557Z","updatedAt":"2023-09-12T03:18:49.557Z","favorited":false,"favoritesCount":0,"author":{"username":"goldbuildkarate","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}}
 
-14:32:44.588 [main] INFO  com.intuit.karate - karate.env system property was: null 
-14:32:44.694 [main] DEBUG com.intuit.karate - request:
-1 > POST https://api.realworld.io/api/users
-1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiZ29sZGJ1aWxka2FyYXRlQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6ImdvbGRidWlsZGthcmF0ZSJ9LCJpYXQiOjE2OTQ0MzkxNjMsImV4cCI6MTY5OTYyMzE2M30.t82AFAvPlpV52DrHQAbRlteeGPPar39EEZJCUyYAIyU
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 86
-1 > Host: api.realworld.io
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
-1 > Accept-Encoding: gzip,deflate
-{"user":{"email":"linh11@test.com","password":"karate123","username":"KarateUser123"}}
+04:18:49.811 [main] DEBUG com.intuit.karate - request:
+2 > GET https://api.realworld.io/api/articles?offset=0&author=goldbuildkarate&limit=10
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiZ29sZGJ1aWxka2FyYXRlQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6ImdvbGRidWlsZGthcmF0ZSJ9LCJpYXQiOjE2OTQ0ODg3MjgsImV4cCI6MTY5OTY3MjcyOH0.psDgeaOw7RCWGnHMFsjeGu3TQGIj5LuZ51DRGcy0avU
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+2 > Accept-Encoding: gzip,deflate
 
-14:32:45.029 [main] DEBUG com.intuit.karate - response time in milliseconds: 330
-1 < 422
-1 < Date: Mon, 11 Sep 2023 13:32:45 GMT
-1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 50
-1 < Connection: keep-alive
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Etag: W/"32-JsHJTKwNHW5NSVjFTl5ds7a++54"
-1 < Via: 1.1 vegur
-1 < CF-Cache-Status: DYNAMIC
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Z1RExPY311YTvtlA0xJCOiL8nUrAy818nxsQ0EqmtQz19qb7DdQLz9rgVEFll4lmle8UrwHCHlrynq3UKGxL6x1SLz5eB65XiIng9n5YEe7w7ZKIW6l6Ivlu22CX6Jshq2wU"}],"group":"cf-nel","max_age":604800}
-1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 < Server: cloudflare
-1 < CF-RAY: 80504750584824dd-LHR
-1 < alt-svc: h3=":443"; ma=86400
-{"errors":{"username":["has already been taken"]}}
 
-14:32:45.086 [main] INFO  com.intuit.karate - karate.env system property was: null 
-14:32:45.233 [main] DEBUG com.intuit.karate - request:
-1 > POST https://api.realworld.io/api/users
-1 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiZ29sZGJ1aWxka2FyYXRlQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6ImdvbGRidWlsZGthcmF0ZSJ9LCJpYXQiOjE2OTQ0MzkxNjMsImV4cCI6MTY5OTYyMzE2M30.t82AFAvPlpV52DrHQAbRlteeGPPar39EEZJCUyYAIyU
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 98
-1 > Host: api.realworld.io
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
-1 > Accept-Encoding: gzip,deflate
-{"user":{"email":"goldbuildkarate@karate.com","password":"karate123","username":"cassy.schaefer"}}
+04:18:50.655 [main] DEBUG com.intuit.karate - response time in milliseconds: 837
+2 < 200
+2 < Date: Tue, 12 Sep 2023 03:18:50 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"5c0-bddqEXHlayHA8YxffGDxOvnnm6I"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=WBP680D49%2FxUATE28NbTXfJtgDoYtUKfvOBmYVCnicpJ3VJR0JrAB0U6zn1GmFipNNHgKVJWRa0PQ4uHLYZQUqqxtyCKds8rlOUnVIXFtCSY%2BlfrETzMc5sjhVeIp%2FbGXktQ"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 80550162ac19240c-LHR
+2 < alt-svc: h3=":443"; ma=86400
+{"articles":[{"slug":"Jeyne-Westerling-228757","title":"Jeyne Westerling","description":"Tolos","body":"Winter is coming.","tagList":[],"createdAt":"2023-09-12T03:18:49.557Z","updatedAt":"2023-09-12T03:18:49.557Z","favorited":false,"favoritesCount":0,"author":{"username":"goldbuildkarate","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Bla-Bla-Bla-228757","title":"Bla Bla Bla","description":"test test","body":"body","tagList":[],"createdAt":"2023-09-09T03:45:18.791Z","updatedAt":"2023-09-09T03:45:18.791Z","favorited":false,"favoritesCount":0,"author":{"username":"goldbuildkarate","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"new-article-228757","title":"new article","description":"new stuff","body":"this is a test","tagList":[],"createdAt":"2023-09-08T21:01:31.585Z","updatedAt":"2023-09-08T21:01:31.585Z","favorited":false,"favoritesCount":0,"author":{"username":"goldbuildkarate","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"this-is-a-test-228757","title":"this is a test","description":"test","body":"article about test","tagList":[],"createdAt":"2023-09-08T20:56:54.072Z","updatedAt":"2023-09-08T20:56:54.072Z","favorited":false,"favoritesCount":0,"author":{"username":"goldbuildkarate","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":4}
 
-14:32:45.955 [main] DEBUG com.intuit.karate - response time in milliseconds: 719
-1 < 422
-1 < Date: Mon, 11 Sep 2023 13:32:46 GMT
-1 < Content-Type: application/json; charset=utf-8
-1 < Content-Length: 47
-1 < Connection: keep-alive
-1 < X-Powered-By: Express
-1 < Access-Control-Allow-Origin: *
-1 < Etag: W/"2f-BJEnYqgmLwV4NGkXB9OccFtans4"
-1 < Via: 1.1 vegur
-1 < CF-Cache-Status: DYNAMIC
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=oSU%2FltmVcLl4Jj16ma64fgFDSYhrMb4GRvE0bXBi6X%2B%2Fvp1ypwZuIl2ZfvxSb1fXF3Ds%2BTQEoSg4eGSooOAjvKQ17RyQuOzE6g8ZJI5M0B7zhxenH4KNnX9OOFpx77otTCB%2F"}],"group":"cf-nel","max_age":604800}
-1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 < Server: cloudflare
-1 < CF-RAY: 80504753cdea88a3-LHR
-1 < alt-svc: h3=":443"; ma=86400
-{"errors":{"email":["has already been taken"]}}
+04:18:50.732 [main] DEBUG com.intuit.karate - request:
+3 > DELETE https://api.realworld.io/api/articles/Jeyne-Westerling-228757
+3 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiZ29sZGJ1aWxka2FyYXRlQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6ImdvbGRidWlsZGthcmF0ZSJ9LCJpYXQiOjE2OTQ0ODg3MjgsImV4cCI6MTY5OTY3MjcyOH0.psDgeaOw7RCWGnHMFsjeGu3TQGIj5LuZ51DRGcy0avU
+3 > Host: api.realworld.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+3 > Accept-Encoding: gzip,deflate
+
+
+04:18:51.159 [main] DEBUG com.intuit.karate - response time in milliseconds: 423
+3 < 204
+3 < Date: Tue, 12 Sep 2023 03:18:51 GMT
+3 < Content-Length: 0
+3 < Connection: keep-alive
+3 < X-Powered-By: Express
+3 < Access-Control-Allow-Origin: *
+3 < Etag: W/"a-bAsFyilMr4Ra1hIU5PyoyFRunpI"
+3 < Via: 1.1 vegur
+3 < CF-Cache-Status: DYNAMIC
+3 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=wLUpcBRuv%2FRRCjIlxNDTMgrNX16e%2BYOHfvBssdeJVbokUnN%2BVHfND4W4f0VFfNU15CAYT%2FVoYSGpqCCc4LlZqrApYDvtlUKKv%2BTVyMhgGUL%2FtkuT4fY%2FR6pEbdKEQiHlbKlu"}],"group":"cf-nel","max_age":604800}
+3 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+3 < Server: cloudflare
+3 < CF-RAY: 805501688cad48b8-LHR
+3 < alt-svc: h3=":443"; ma=86400
+
+
+04:18:51.198 [main] DEBUG com.intuit.karate - request:
+4 > GET https://api.realworld.io/api/articles?offset=0&author=goldbuildkarate&limit=10
+4 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiZ29sZGJ1aWxka2FyYXRlQGthcmF0ZS5jb20iLCJ1c2VybmFtZSI6ImdvbGRidWlsZGthcmF0ZSJ9LCJpYXQiOjE2OTQ0ODg3MjgsImV4cCI6MTY5OTY3MjcyOH0.psDgeaOw7RCWGnHMFsjeGu3TQGIj5LuZ51DRGcy0avU
+4 > Host: api.realworld.io
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+4 > Accept-Encoding: gzip,deflate
+
+
+04:18:52.021 [main] DEBUG com.intuit.karate - response time in milliseconds: 816
+4 < 200
+4 < Date: Tue, 12 Sep 2023 03:18:52 GMT
+4 < Content-Type: application/json; charset=utf-8
+4 < Transfer-Encoding: chunked
+4 < Connection: keep-alive
+4 < X-Powered-By: Express
+4 < Access-Control-Allow-Origin: *
+4 < Etag: W/"450-pk++qivL9HZvWD7jQ6+KTndV0lk"
+4 < Via: 1.1 vegur
+4 < CF-Cache-Status: DYNAMIC
+4 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2RLEMCVKnaXp%2FasZCEjO%2Ft%2BOeQhpitP5Uq2lFmIG1dW%2Ft4mmVWgid0aUtw6u6Qrx8i7t9lW%2FT7gsWX3EF0wfntkNrOPa6j8Q51wVOgC98E83Vlrz3Ma4fH63TOW0RWDEJw4H"}],"group":"cf-nel","max_age":604800}
+4 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+4 < Server: cloudflare
+4 < CF-RAY: 8055016b78e13697-LHR
+4 < alt-svc: h3=":443"; ma=86400
+{"articles":[{"slug":"Bla-Bla-Bla-228757","title":"Bla Bla Bla","description":"test test","body":"body","tagList":[],"createdAt":"2023-09-09T03:45:18.791Z","updatedAt":"2023-09-09T03:45:18.791Z","favorited":false,"favoritesCount":0,"author":{"username":"goldbuildkarate","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"new-article-228757","title":"new article","description":"new stuff","body":"this is a test","tagList":[],"createdAt":"2023-09-08T21:01:31.585Z","updatedAt":"2023-09-08T21:01:31.585Z","favorited":false,"favoritesCount":0,"author":{"username":"goldbuildkarate","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"this-is-a-test-228757","title":"this is a test","description":"test","body":"article about test","tagList":[],"createdAt":"2023-09-08T20:56:54.072Z","updatedAt":"2023-09-08T20:56:54.072Z","favorited":false,"favoritesCount":0,"author":{"username":"goldbuildkarate","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}}],"articlesCount":3}
 
