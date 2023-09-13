@@ -1,4 +1,4 @@
-@debug
+
 Feature: signup feature
 
 Background:
