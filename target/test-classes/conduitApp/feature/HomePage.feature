@@ -26,7 +26,7 @@ Scenario: get 10 articals from the page
     And match response.articlesCount != 201
     And match response == {"articles":"#array", "articlesCount":200}
     And match response.articles[0].createdAt contains '2023'
-    And match response.articles[*].favoritesCount contains 495
+    And match response.articles[*].favoritesCount contains 0
     And match response.articles[*].author.bio contains null
     And match response..bio contains null
     And match each response..following == false

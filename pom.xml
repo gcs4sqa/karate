@@ -11,7 +11,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <maven.compiler.version>3.8.1</maven.compiler.version>
-        <maven.surefire.version>2.22.2</maven.surefire.version>        
+        <maven.surefire.version>2.22.2</maven.surefire.version>   
+        <cucumber-reporter>5.6.1</cucumber-reporter>     
         <karate.version>1.4.0</karate.version>
     </properties>    
 
@@ -28,6 +29,12 @@
         <artifactId>javafaker</artifactId>
         <version>1.0.2</version>
     </dependency>
+
+    <dependency>
+    <groupId>net.masterthought</groupId>
+    <artifactId>cucumber-reporting</artifactId>
+    <version>${cucumber-reporter}</version>
+</dependency>
 		
     </dependencies>
 
