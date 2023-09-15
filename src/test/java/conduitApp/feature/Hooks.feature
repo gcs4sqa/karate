@@ -1,4 +1,4 @@
-@debug
+
 Feature: Hooks
 
 Background: hooks

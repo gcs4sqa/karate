@@ -53,3 +53,21 @@ Scenario: get 10 articals from the page
             }
         }
     """
+@debug
+Scenario: conditional logic
+    Given params {limit: 10, offset: 0}
+    Given path 'articles'
+    When method Get
+    Then status 200
+    * def favoritesCount = response.articles[0].favoritesCount
+    * def articleObject = response.articles[0]
+
+    # * if (favoritesCount == 0 ) karate.call('classpath:helpers/AddLikes.feature', articleObject)
+
+    * def result = favoritesCount == 0 ? karate.call('classpath:helpers/AddLikes.feature', articleObject).likesCount : favoritesCount
+
+    Given params {limit: 10, offset: 0}
+    Given path 'articles'
+    When method Get
+    Then status 200
+    And match response.articles[0].favoritesCount == result
