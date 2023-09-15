@@ -1,4 +1,4 @@
-
+@cliff
 Feature: test for the home page
 
 Background: define url
@@ -92,3 +92,15 @@ Scenario: sleep call
     When method Get
     * eval sleep(5000)
     Then status 200
+
+Scenario: number to string
+    * def foo = 10
+    * def json = {"bar": #(foo+'')}
+    * match json == {"bar": '10'}
+
+Scenario: string to number
+    * def foo = '10'
+    * def json = {"bar": #(foo*1)}
+    * def json2 = {"bar": #(~~parseInt(foo))}
+    * match json == {"bar": 10}
+    * match json2 == {"bar": 10}
